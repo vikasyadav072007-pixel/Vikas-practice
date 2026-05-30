@@ -6,6 +6,23 @@
     <title>My Projects</title>
     <link rel="stylesheet" href="style.css">
 </head>
+    <div id="exitPopup" class="popup">
+    <div class="popup-content">
+        <h2>Thank You!</h2>
+        <p>Thank you for visiting us.</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<script>
+function showPopup() {
+    document.getElementById("exitPopup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("exitPopup").style.display = "none";
+}
+</script>
 <body>
     <nav>
     <div class="logo">DevPractice</div>
